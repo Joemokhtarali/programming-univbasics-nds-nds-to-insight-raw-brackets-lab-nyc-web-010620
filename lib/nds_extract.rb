@@ -15,7 +15,7 @@ def directors_totals(nds)
       j = 0 
     while j < movies.length do
       growth += movies[j][:worldwide_gross]
-      total[name] = growth
+      total[name] += growth
       j += 1
     end 
     i += 1
