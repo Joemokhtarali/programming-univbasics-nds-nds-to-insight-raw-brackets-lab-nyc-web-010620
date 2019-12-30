@@ -8,7 +8,7 @@ def directors_totals(nds)
   total = {}
   growth = 0
   name = nds[0][:name]
-  movies = nds[0][:movies]
+  # movies = nds[0][:movies]
   
     i = 0 
     while i < movies.length do
