@@ -7,16 +7,19 @@ binding.pry
 def directors_totals(nds)
   total = {}
   growth = 0
-  name = nds[0][:name]
-  # movies = nds[0][:movies]
-  nds
   
-    i = 0 
-    while i < movies.length do
-      growth += movies[i][:worldwide_gross]
+  i = 0 
+  while i < nds.length do 
+    name = nds[i][:name]
+    movies = nds[i][:movies]
+      j = 0 
+    while j < movies.length do
+      growth += movies[j][:worldwide_gross]
       total[name] = growth
-      i += 1
+      j += 1
     end 
+    i += 1
+  end 
     return total 
 end 
 
